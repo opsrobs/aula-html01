@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exemplo de HTML 'H1' </h1>
+    <p>Exemplo de HTML P</p>
+    <a href="http://www.w3schools.com/" target="_blank">W3Schools</a> <br />
+
+    <h2>Exemplo de HTML H2</h2>
+    <p>Exemplo de HTML P</p>
+    <a href="pag1.html">Pagina Interna!!</a>
+    <br>
+    <a href="#titulo5">Titulo 5</a>
+
+    <h3>Exemplo de HTML H3</h3>
+    <p>Exemplo de HTML P</p>
+
+    <h4>Exemplo de HTML H4</h4>
+    <p>Exemplo de HTML P</p>
+    <span style="background-color: #834389;">Este é o Span</span>
+    <ul>
+        <li>Um</li>
+        <li>Dois</li>
+        <li>Três</li>
+    </ul>
+    <ol>
+        <li>Brasil</li>
+        <li>Argentina</li>
+        <li>Paraguai</li>
+    </ol>
+
+
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+            channel: "puguinha"
+        });
+    </script>
+
+
+
+    <div style="background-color: #3333ff;">
+        <table>
+            <th>Nome</th>
+            <th colspan="4">Email</th>
+            <tr>
+                <td colspan="4">
+                    Robson Flávio
+                </td>
+                <td colspan="4">
+                    Robson.Flavio20@...
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    XPTO
+                </td>
+                <td colspan="4">
+                    XPTO@dto.com
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="background-color: #6a6ad8;">
+        <form action="Salvar_no_server" method="POST">
+            <br>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required autofocus />
+            <br />
+            <input type="radio" name="genero" value="Masculino" checked>Masculino</input><br>
+            <input type="radio" name="genero" value="Feminino" />Feminino</input><br>
+            <input type="radio" name="genero" value="não informado" />não informado</input>
+            <br />
+            <br />
+            <input type="checkbox" name="centra" value="ar">Central ar</input>
+            <input type="checkbox" name="centra" value="ar">Central multimidia</input>
+            <br />
+            <input type="submit" value="Salvar">
+            <br />
+            <br />
+            <textarea name="observacao" rows="10" cols="80"></textarea>
+            <br />
+            <select name="marca">
+                <option>VW</option>
+                <option>Ford</option>
+                <option>GM</option>
+                <option selected>Fiat</option>
+            </select>
+            <br />
+            <input type="password" name="senha" />
+            </br>
+            <input type="date" name="date" />
+            </br>
+            <input type="number" name="number"/>
+        </form>
+        <button type="submit" form="form1" value="Submit">Eviar</button>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <h5 id="titulo5">Exemplo de HTML H5</h5>
+
+
+</body>
+
+</html>
