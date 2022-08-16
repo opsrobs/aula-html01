@@ -34,8 +34,10 @@ div {
 
 div.form-center {
     display: flex;
+    width: 35rem;
+    justify-content: center;
+    margin: auto;
     text-align: left;
-    margin-left: 20px;
     
 }
 
@@ -49,6 +51,59 @@ div.form-center {
     font-family: sans-serif;
 }
 
+/* DASHBOARD */
+
+body{
+    display: flex;
+}
+
+.container{
+    
+    flex-wrap: wrap;
+    width: min(90vw, 800px);
+    margin: auto;
+    border: 1px solid red;
+}
+
+.card{
+    
+    flex-wrap: wrap;
+    background: white;
+    padding: 1.5rem 2rem;
+    border: 1px solid red;
+    border-radius: 0.25rem;
+
+    margin-bottom: 2rem;
+
+    color: var(--dark-blue);
+}
+
+.card h3{
+    font-weight: normal;
+    font-size: 1rem;
+    border: 1px solid red;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card p{
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+#balance{
+    display: flex;
+    justify-content: center;
+}
+
+#balance h2{
+    color: white;
+    margin-top: 0;
+}
 
 
 
